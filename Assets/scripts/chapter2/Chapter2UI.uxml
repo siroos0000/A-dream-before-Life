@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Label text="" name="PaperPanel" style="top: 18%; width: 40%; height: 65%; left: 30%; background-color: rgba(188, 179, 61, 0.973);">
+        <ui:Button text="" name="ExitButton" style="left: 94%; height: 10%; width: 10%; bottom: 7%;"/>
+        <ui:Label text="Label" name="PaperText" style="top: -4%; font-size: 43px; color: rgba(5, 5, 5, 0.957); left: 3%; width: 94%;"/>
+    </ui:Label>
+</ui:UXML>
