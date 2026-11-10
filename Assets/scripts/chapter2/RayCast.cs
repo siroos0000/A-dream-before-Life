@@ -6,6 +6,7 @@ public class RayCast : MonoBehaviour
     [SerializeField]private Camera FPC;
     public float ClickDistance = 3f;
     public string HitName;
+    public RaycastHit hit;
     void Update()
     {
         FPRaycast();
@@ -19,7 +20,7 @@ public class RayCast : MonoBehaviour
     private void FPRaycast()
     {
         Ray ray= FPC.ViewportPointToRay(new Vector3(0.5f,0.5f,0f));
-        if(Physics.Raycast(ray,out RaycastHit hit,ClickDistance))
+        if(Physics.Raycast(ray,out hit,ClickDistance))
         {
             if(hit.collider.CompareTag("PickUP"))
             {
